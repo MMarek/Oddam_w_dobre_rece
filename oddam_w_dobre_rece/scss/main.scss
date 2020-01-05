@@ -1,1 +1,7 @@
 @import '~normalize-scss';
+@import "settings/colors";
+@import "settings/fonts";
+
+
+body { font-family: $font-base }
+//??
