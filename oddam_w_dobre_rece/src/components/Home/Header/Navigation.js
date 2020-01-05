@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import {Link} from 'react-scroll';
 
-class Navigation extends {
+class Navigation extends Component {
 
     render() {
         return (
