@@ -11,7 +11,7 @@ import {
 import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";
-import LogOut from "./components/LogOut/LogOut";
+// import LogOut from "./components/LogOut/LogOut";
 
 function App() {
   return (
