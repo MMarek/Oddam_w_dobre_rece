@@ -10,7 +10,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin: 0 8.875rem 0 20rem;
+    margin: 0 8.875rem 0 30rem;
   }
 }
 .LoginRegister {
@@ -24,7 +24,7 @@ header {
     padding: 0.5625rem 0.625rem;
   }
   .register_hoverLink {
-    border: 0.75px solid $secoundColor;
+    border: 0.75px solid $thirdColor;
   }
 }
 
@@ -34,12 +34,12 @@ header {
   div {
     padding: 0.5625rem 1.25rem;
     font-family: $font-base;
-    color: $thirdColor;
+    color: $fifthColor;
     font-size: 1.125rem;
     text-align: right;
 
     &hover {
-      border: 0.75px solid $thirdColor;
+      border: 0.75px solid $fifthColor;
       cursor: pointer;
       padding: 0.5rem 1.2rem;
     }
@@ -59,7 +59,7 @@ header {
     font-family: $font-base;
     font-weight: 400;
     letter-spacing: -0.76px;
-    color: $thirdColor;
+    color: $fifthColor;
     text-align: center;
     padding-bottom: 1.5625rem;
     line-height: 3.4375rem;
@@ -72,7 +72,7 @@ header {
 
     p {
       padding: 1rem 0.3rem;
-      border: 0.75px solid $thirdColor;
+      border: 0.75px solid $fifthColor;
       margin-left: 2.75rem;
       font-size: 2.25rem;
       font-family: $font-base;

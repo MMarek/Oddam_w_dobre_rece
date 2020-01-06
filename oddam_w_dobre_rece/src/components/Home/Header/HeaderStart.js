@@ -14,7 +14,7 @@ class HeaderStart extends Component {
                 <div className='title'>Zacznij pomagać!<br/> Oddaj niechciane rzeczy w zaufane ręce</div>
                 <img src={decoration} alt='decoration'/>
                 <div className='headerButtons'>
-                    <Link to='../Login' style={buttonStyle} className='hoverLink'><p>Oddaj rzeczy</p></Link>
+                    <Link to='../Login' style={buttonStyle} className='hoverLink'><p>Oddaj<br/> rzeczy</p></Link>
                     <Link to='../Login' style={buttonStyle} className='hoverLink'><p>Zorganizuj zbiórkę</p></Link>
                 </div>
             </div>
