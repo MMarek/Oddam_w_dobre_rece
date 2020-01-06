@@ -10,7 +10,7 @@ class Button extends Component {
         };
 
         return (
-            <section className='buttonSection'>
+            <section className='buttonStep'>
                 <Link to='/Login' style={buttonStyle} className='hoverLink'>
                     <p className='button'>
                         Oddaj<br/>rzeczy

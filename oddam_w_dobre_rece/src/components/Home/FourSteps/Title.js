@@ -5,7 +5,7 @@ class Title extends Component {
 
     render() {
         return (
-            <div className='stepsTitle' id='whatIsIt'>
+            <div className='titleSteps' id='whatIsIt'>
                 <h2>Wystarczą 4 proste kroki</h2>
                 <img src={decoration} alt='decoration'/>
             </div>
