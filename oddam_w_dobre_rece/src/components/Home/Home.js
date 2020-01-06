@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import HeaderMain from "./Header/HeaderMain";
 import ThreeColumns from "./ThreeColumns/ThreeColumns";
 import FourSteps from "./FourSteps/FourSteps";
-
+import AboutUs from "./AboutUs/AboutUs";
 
 
 class Home extends Component {
@@ -13,6 +13,7 @@ class Home extends Component {
                 <HeaderMain/>
                 <ThreeColumns/>
                 <FourSteps/>
+                <AboutUs/>
             </>
         )
     }
