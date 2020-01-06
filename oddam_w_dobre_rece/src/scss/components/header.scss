@@ -1,0 +1,95 @@
+header {
+  display: flex;
+
+  .headerImage {
+    flex-grow: 0;
+    margin: 0 -30rem 0;
+  }
+  .headerNavigation {
+    //flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0 8.875rem 0 20rem;
+  }
+}
+.LoginRegister {
+  display: flex;
+  font-size: 0.875rem;
+  font-family: $font-base;
+  text-align: right;
+  margin-bottom: 2rem;
+
+  span {
+    padding: 0.5625rem 0.625rem;
+  }
+  .register_hoverLink {
+    border: 0.75px solid $secoundColor;
+  }
+}
+
+.navLinks {
+  display: flex;
+
+  div {
+    padding: 0.5625rem 1.25rem;
+    font-family: $font-base;
+    color: $thirdColor;
+    font-size: 1.125rem;
+    text-align: right;
+
+    &hover {
+      border: 0.75px solid $thirdColor;
+      cursor: pointer;
+      padding: 0.5rem 1.2rem;
+    }
+  }
+}
+
+.headerTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+
+  .title {
+    font-size: 2.375rem;
+    font-family: $font-base;
+    font-weight: 400;
+    letter-spacing: -0.76px;
+    color: $thirdColor;
+    text-align: center;
+    padding-bottom: 1.5625rem;
+    line-height: 3.4375rem;
+  }
+
+  .headerButtons {
+    padding-top: 4.0625rem;
+    display: flex;
+    line-height: 45px;
+
+    p {
+      padding: 1rem 0.3rem;
+      border: 0.75px solid $thirdColor;
+      margin-left: 2.75rem;
+      font-size: 2.25rem;
+      font-family: $font-base;
+      font-weight: 300;
+      text-transform: uppercase;
+      width: 17rem;
+      text-align: center;
+    }
+  }
+}
+
+.hoverLink:hover {
+  opacity: 0.5;
+}
+
+
+//hover ??
+//cursor:pointer  ??
+//font-weight: 400;  ??
+//text-transform: uppercase;  ??

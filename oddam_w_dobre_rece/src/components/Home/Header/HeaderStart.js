@@ -6,7 +6,7 @@ class HeaderStart extends Component {
     render() {
         const buttonStyle = {
             textDecoration: 'none',
-            paddingTop: '2rem',
+            paddingTop: '2.3125rem',
             color: '#3C3C3C',
         };
         return (
@@ -24,6 +24,3 @@ class HeaderStart extends Component {
 
 export default HeaderStart;
 
-
-
-//             paddingTop: "2.3125rem",???
