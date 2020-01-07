@@ -3,7 +3,7 @@ import HeaderMain from "./Header/HeaderMain";
 import ThreeColumns from "./ThreeColumns/ThreeColumns";
 import FourSteps from "./FourSteps/FourSteps";
 import AboutUs from "./AboutUs/AboutUs";
-// import WhoWeHelp from "./WhoWeHelp/WhoWeHelp";
+import WhoWeHelp from "./WhoWeHelp/WhoWeHelp";
 import ContactUs from "./ContactUs/ContactUs";
 
 
@@ -16,7 +16,7 @@ class Home extends Component {
                 <ThreeColumns/>
                 <FourSteps/>
                 <AboutUs/>
-                {/*<WhoWeHelp/>*/}
+                <WhoWeHelp/>
                 <ContactUs/>
             </>
         )
