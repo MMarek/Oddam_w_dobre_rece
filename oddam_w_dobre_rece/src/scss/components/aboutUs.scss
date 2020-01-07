@@ -1,0 +1,86 @@
+//.aboutUs {
+//  display: flex;
+//  flex-direction: row;
+//  justify-content: center;
+//  align-items: flex-start;
+//  //height: ;
+//
+//  .aboutText {
+//    //font-size: rem;
+//    font-family: $font-base;
+//    //letter-spacing: px;
+//    color: $fifthColor;
+//    //margin: ;
+//
+//    h2 {
+//      font-size: 2.375rem;
+//      font-family: $font-base;
+//      //letter-spacing: -0.76px;
+//      color: $fifthColor;
+//      padding-bottom: 2rem;
+//    }
+//
+//    img {
+//
+//    }
+//
+//    .signImage {
+//
+//    }
+//  }
+//  .aboutImage {
+//    display: flex;
+//    flex-direction: row;
+//    justify-content: center;
+//    align-items: flex-end;
+//    width: 50%;
+//    height: auto;
+//    //height: ;
+//  }
+//}
+//
+
+.aboutUs {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+
+  .aboutText {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $fourthColor;
+
+    h2 {
+      letter-spacing: -0.76px;
+      color: $fourthColor;
+      font-family: $font-base;
+      font-size: 1.875rem;
+      margin-bottom: 2rem;
+    }
+
+    p{
+      letter-spacing: -0.6px;
+      color: $fourthColor;
+      font-family: $font-base;
+      font-size: 1.875ram;
+      text-align: center;
+      width: 70%;
+      line-height: 3.375rem;
+      margin: 2rem 0;
+    }
+
+    .signImage {
+      width: 70%;
+      text-align: right;
+    }
+  }
+
+  .aboutImage {
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+}
