@@ -1,0 +1,29 @@
+import React, {Component} from "react";
+import {Link} from 'react-scroll';
+
+class Navigation extends Component {
+
+    render() {
+        return (
+            <div className='navLinks'>
+                <Link activeClass='active' to='start' spy={true} smooth={true} offset={50} duration={500}>
+                    <div>Start</div>
+                </Link>
+                <Link activeClass='active' to='oCoChodzi' spy={true} smooth={true} offset={50} duration={500}>
+                    <div>O co chodzi?</div>
+                </Link>
+                <Link activeClass='active' to='oNas' spy={true} smooth={true} offset={50} duration={500}>
+                    <div>O nas</div>
+                </Link>
+                <Link activeClass='active' to='FunIorg' spy={true} smooth={true} offset={50} duration={500}>
+                    <div>Fundacja i organizacje</div>
+                </Link>
+                <Link activeClass='active' to='kontakt' spy={true} smooth={true} offset={50} duration={500}>
+                    <div>Kontakt</div>
+                </Link>
+            </div>
+        )
+    }
+}
+
+export default Navigation;
