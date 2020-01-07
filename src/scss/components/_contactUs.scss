@@ -19,12 +19,11 @@
     }
 
     .copyright {
+      position: absolute;
+      bottom: 1.5rem;
+      font-size: 1.125rem;
+      font-family: $font-base;
     }
-
-    position: absolute;
-    bottom: 1.5rem;
-    font-size: 1.125rem;
-    font-family: $font-base;
   }
 
   .contactUsText {
@@ -50,124 +49,117 @@
       font-family: $font-base;
     }
 
-    span {
-      color: $fourthColor;
-      font-family: $font-base;
-      font-size: 1rem;
-      margin: 1rem 0;
-    }
+    .contactForm {
+      //  display: flex;
+      //  flex-direction: column;
+      //  justify-content: center;
+      //  align-items: center;
 
-    .nameEmail {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      margin-top: 2rem;
-    }
+      span {
+        color: $fourthColor;
+        font-family: $font-base;
+        font-size: 1rem;
+        margin: 1rem 0;
+      }
 
-    .name {
-      display: flex;
-      flex-direction: column;
-      margin-right: 1rem;
-    }
+      .nameEmail {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 2rem;
 
-    .email {
-      display: flex;
-      flex-direction: column;
-    }
+        input {
+          //  height: 1.875rem;
+          //  background: transparent;
+          //  font-family: $font-base;
+          //  font-size: 1.125rem;
+          //  border-top: none;
+          //  border-left: none;
+          //  border-right: none;
+          //  border-bottom: 1px solid $fifthColor;
+          //  line-height: 1.5rem;
+          //  opacity: 0.5;
+        }
 
-    .message {
-      margin-top: 1rem;
-      display: flex;
-      flex-direction: column;
-    }
+        .name {
+          display: flex;
+          flex-direction: column;
+          margin-right: 1rem;
+        }
 
-    .sendFormButton {
-      width: 100%;
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
+        .email {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      .message {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+
+
+        textarea {
+          //  width: 33rem;
+          //  height: 6.125rem;
+          //  margin-bottom: 3rem;
+          //  background: transparent;
+          //  font-family: $font-base;
+          //  font-size: 1.125rem;
+          //  border-top: none;
+          //  border-left: none;
+          //  border-right: none;
+          //  border-bottom: 1px solid #000;
+          //  opacity: 0.7;
+          //  resize: none;
+          //  line-height: 1.5rem;
+        }
+      }
     }
   }
 }
 
+.sendFormButton {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 
-//.contactForm {
-//  display: flex;
-//  flex-direction: column;
-//  justify-content: center;
-//  align-items: center;
+  button {
+    //border: 0.75px solid $thirdColor;
+    //padding: 0.8rem 3rem;
+    //font-size: 1.125rem;
+    //font-family: $font-base;
+    //background: transparent;
+  }
+}
 
+.socialMedia {
+  //position: absolute;
+  //bottom: 1.5rem;
+  //right: 7rem;
 
-//input {
-//    height: 1.875rem;
-//    background: transparent;
-//    font-family: $font-base;
-//    font-size: 1.125rem;
-//    border-top: none;
-//    border-left: none;
-//    border-right: none;
-//    border-bottom: 1px solid $formBorderBottomColor;
-//    line-height: 1.5rem;
-//    opacity: 0.5;
-//  }
-
-
-//textarea {
-//  width: 33rem;
-//  height: 6.125rem;
-//  margin-bottom: 3rem;
-//  background: transparent;
-//  font-family: $font-base;
-//  font-size: 1.125rem;
-//  border-top: none;
-//  border-left: none;
-//  border-right: none;
-//  border-bottom: 1px solid #000;
-//  opacity: 0.7;
-//  resize: none;
-//  line-height: 1.5rem;
-//}
+  img {
+    //margin: 0 0.5rem;
+    //cursor: pointer;
+    //
+    //&:hover {
+    //  opacity: 0.5;
+    }
+  }
 
 
-//button {
-//  border: 0.75px solid $buttonBorder;
-//  padding: 0.8rem 3rem;
-//  font-size: 1.125rem;
-//  font-family: $font-base;
-//  background: transparent;
-//}
-//}
-//
-//
-//.socialMedia {
-//  position: absolute;
-//  bottom: 1.5rem;
-//  right: 7rem;
-//
-//
-//  img {
-//    margin: 0 0.5rem;
-//    cursor: pointer;
-//
-//
-//    &:hover {
-//      opacity: 0.5;
-//    }
-//  }
-//}
-//
-//
-//.errorsList {
-//  display: flex;
-//  flex-direction: column;
-//  justify-content: center;
-//  align-items: center;
-//
-//
-//  li {
-//    margin: 0.5rem 0;
-//    font-family: $font-base;
-//    font-size: 1rem;
-//    font-weight: 300;
-//  }
-//}
+.errorsList {
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: center;
+  //align-items: center;
+
+  li {
+    //margin: 0.5rem 0;
+    //font-family: $font-base;
+    //font-size: 1rem;
+    //font-weight: 300;
+  }
+}
+
