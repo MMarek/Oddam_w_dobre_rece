@@ -19,7 +19,7 @@ class LogOut extends Component {
         return (
             <>
                 <section className='logNav'>
-                    <LogReg/>
+                    <LoginRegister/>
                     <Navigation/>
                 </section>
                 <section className='loginForm'>
