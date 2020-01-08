@@ -7,9 +7,65 @@ import facebook from './../../../assets/Facebook.svg'
 
 class ContactUs extends Component {
 
-    render() {
-        return (
+    state = {
+        name: "",
+        email: "",
+        message: "",
+    };
 
+    changeName = (e) => {
+        this.setState({
+            name: e.target.value,
+        });
+    };
+
+    changeEmail = (e) => {
+        this.setState({
+            email: e.target.value,
+        })
+    };
+
+    changeMessage = (e) => {
+        this.setState({
+            message: e.target.value,
+        });
+    };
+
+    render() {
+
+        const endTextStyle = {
+            fontSize: "1rem",
+            fontWeight: 700,
+            color: "green",
+            fontFamily: "Open Sans, sans-serif",
+            textAlign: "center",
+            width: "50%",
+            lineHeight: "1.5rem",
+        };
+
+        const errorStyle = {
+            fontSize: "0.8rem",
+            margin: 0,
+            borderTop: "1px solid red",
+            paddingTop: "0.5rem",
+            color: "red",
+            position: "absolute",
+            top: "15.4rem",
+            width: "15rem",
+        };
+
+        const errorMsg = {
+            fontSize: "0.8rem",
+            marginTop: "-3rem",
+            borderTop: "1px solid red",
+            paddingTop: "0.5rem",
+            color: "red",
+            position: "absolute",
+            top: "28.85rem",
+            width: "33.4rem",
+        };
+
+        return (
 
             <section className='contactUs' id='kontakt'>
                 <div className='contactUsImage'>
@@ -23,33 +79,34 @@ class ContactUs extends Component {
                 <div className='contactUsText'>
                     <h2>Skontaktuj się z nami</h2>
                     <img src={decoration} alt='decoration'/>
-                    {/*<form className='contactForm' onSubmit={this.handleFormSubmit}>*/}
-                        {/*{this.state.formSend && <h3 style={endTextStyle}>{this.state.endMessage}</h3>}*/}
+                    <form className='contactForm' onSubmit={this.handleFormSubmit}>
+                        {this.state.formSend && <h3 style={endTextStyle}>{this.state.endMessage}</h3>}
                         <div className='nameEmail'>
                             <div className='name'>
                                 <span>Wpisz swoje imię</span>
-                                {/*<input placeholder='Krzysztof' value={this.state.name} onChange={this.changeName} type='text'/>*/}
-                                {/*{this.state.validName && <span style={errorStyle}>Podane imię jest nieprawidłowe!</span>}*/}
+                                <input placeholder='Krzysztof' value={this.state.name} onChange={this.changeName} type='text'/>
+                                {this.state.validName && <span style={errorStyle}>Podane imię jest nieprawidłowe!</span>}
                             </div>
                             <div className='email'>
                                 <span>Wpisz swój email</span>
-                                {/*<input placeholder='abc@xyz.pl' value={this.state.email} onChange={this.changeEmail} type='text'/>*/}
-                                {/*{this.state.validEmail && <span style={errorStyle}>Podany email jest nieprawidłowy!</span>}*/}
+                                <input placeholder='abc@xyz.pl' value={this.state.email} onChange={this.changeEmail} type='text'/>
+                                {this.state.validEmail && <span style={errorStyle}>Podany email jest nieprawidłowy!</span>}
                             </div>
                         </div>
                         <div className='message'>
                             <span>Wpisz swoją wiadomość</span>
-                            {/*<textarea placeholder='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod*/}
-	                        {/*     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud*/}
-	                        {/*      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'*/}
-                            {/*          value={this.state.message}*/}
-                            {/*          onChange={this.changeMessage} type='text'></textarea>*/}
+                            <textarea placeholder='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+	                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+	                              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+
+                                       value={this.state.message}
+                                       onChange={this.changeMessage} type='text'></textarea>
                             {/*{this.state.validMessage && <span style={errorMsg}>Wiadomość musi mieć co najmniej 120 znaków!</span>}*/}
                         </div>
                         <div className='sendFormButton'>
                             <button className='hoverLink'>Wyślij</button>
                         </div>
-                    {/*</form>*/}
+                    </form>
 
 
                 </div>

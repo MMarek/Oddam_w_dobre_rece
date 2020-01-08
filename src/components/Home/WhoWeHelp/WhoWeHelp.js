@@ -60,7 +60,7 @@ class WhoWeHelp extends Component {
         return(
             <section className='fundation'>
                 {/*{currentFundations.map((item,index) =>{*/}
-                return(
+                {/*return(*/}
                     <article className='fundList' key=''>
                         <div className='fundName'>
                             <h3></h3>
@@ -70,8 +70,8 @@ class WhoWeHelp extends Component {
                             <p></p>
                         </div>
                     </article>
-                )
-                })}
+                {/*)*/}
+                {/*})}*/}
             </section>
         );
     };
@@ -86,7 +86,7 @@ class WhoWeHelp extends Component {
         // const allOrganizations = organizations.organizations;
 
         return(
-            <section className='whoWeHelp' id='whoWeHelp'>
+            <section className='whoWeHelp' id='FunIorg'>
                 <div className='whoWeHelpDesc'>
                     <h2>Komu pomagamy?</h2>
                     <img src={decoration} alt='decoration'/>

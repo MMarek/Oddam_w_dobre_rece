@@ -37,6 +37,7 @@ header {
     color: $fifthColor;
     font-size: 1.125rem;
     text-align: right;
+    cursor: pointer;
 
     &hover {
       border: 0.75px solid $fifthColor;
