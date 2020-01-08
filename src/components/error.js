@@ -328,3 +328,67 @@ export default ContactUs;
 //
 //
 // export default WhoWeHelp;
+
+
+
+
+
+handleFormSubmit = (e) => {
+
+    this.setState({
+        validPassword: false,
+        validEmail: false,
+        loginError: false,
+    });
+
+e.preventDefault();
+const {password, email} = this.state;
+
+
+const emailValidation = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+
+if (emailValidation.test(email) &&
+    password.length >= 6) {
+
+
+    this.props.firebase
+        .doSignInWithEmailAndPassword(email, password)
+        .then(authUser => {
+            this.setState({
+                email: "",
+                password: ""
+            });
+            console.log("sukces!");
+
+
+            sessionStorage.setItem("email", `${authUser.user.email}`);
+            const { history } = this.props;
+            history.push("/");
+        })
+        .catch((error) => {
+
+
+            if (error.code === 'auth/user-not-found') {
+                this.setState({
+                    loginError: true,
+                    email: "",
+                    password: "",
+                })
+            }
+        });
+
+
+} else {
+    if (password.length < 6) {
+        this.setState({
+            validPassword: true,
+        })
+    }
+    if (!emailValidation.test(email)) {
+        this.setState({
+            validEmail: true,
+        })
+    }
+}
+};

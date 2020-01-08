@@ -31,3 +31,71 @@
     margin: 2.5rem 0;
   }
 }
+
+
+
+
+.loginFormProper {
+  width: 24.0625rem;
+  height: 16rem;
+  background: $fourthColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  .loginEmailName {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+
+
+    span {
+      color: $fifthColor;
+      font-family: $font-base;
+      margin-bottom: 1rem;
+    }
+
+
+    input {
+      height: 1.875rem;
+      background: transparent;
+      font-family: $font-base;
+      font-size: 1.125rem;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid $fifthColor;
+      line-height: 1.5rem;
+      opacity: 0.5;
+    }
+  }
+}
+
+
+.loginButtons {
+  width: 30rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem;
+  font-size: 1.125rem;
+  font-family: $font-base;
+  font-weight: 300;
+
+
+  span {
+    padding: 1rem;
+    cursor: pointer;
+
+
+    //&:hover {
+    //  opacity: 0.5;
+    }
+  }
+
+
+  .logIn {
+    border: 0.75px solid $fifthColor;
+  }
+
