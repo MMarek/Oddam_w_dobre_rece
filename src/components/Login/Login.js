@@ -4,6 +4,7 @@ import LoginRegister from "../Home/Header/LoginRegister";
 import decoration from "../../assets/Decoration.svg";
 
 import {Link} from "react-router-dom";
+
 // import {withRouter} from "react-router-dom"
 
 
@@ -36,56 +37,56 @@ class LoginForm extends Component {
     //         loginError: false,
     //     });
 
-        // e.preventDefault();
-        // const {password, email} = this.state;
-        //
-        //
-        // const emailValidation = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        //
-        //
-        // if (emailValidation.test(email) &&
-        //     password.length >= 6) {
-        //
-        //
-        //     this.props.firebase
-        //         .doSignInWithEmailAndPassword(email, password)
-        //         .then(authUser => {
-        //             this.setState({
-        //                 email: "",
-        //                 password: ""
-        //             });
-        //             console.log("sukces!");
-        //
-        //
-        //             sessionStorage.setItem("email", `${authUser.user.email}`);
-        //             const { history } = this.props;
-        //             history.push("/");
-        //         })
-        //         .catch((error) => {
-        //
-        //
-        //             if (error.code === 'auth/user-not-found') {
-        //                 this.setState({
-        //                     loginError: true,
-        //                     email: "",
-        //                     password: "",
-        //                 })
-        //             }
-        //         });
-        //
-        //
-        // } else {
-        //     if (password.length < 6) {
-        //         this.setState({
-        //             validPassword: true,
-        //         })
-        //     }
-        //     if (!emailValidation.test(email)) {
-        //         this.setState({
-        //             validEmail: true,
-        //         })
-        //     }
-        // }
+    // e.preventDefault();
+    // const {password, email} = this.state;
+    //
+    //
+    // const emailValidation = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    //
+    //
+    // if (emailValidation.test(email) &&
+    //     password.length >= 6) {
+    //
+    //
+    //     this.props.firebase
+    //         .doSignInWithEmailAndPassword(email, password)
+    //         .then(authUser => {
+    //             this.setState({
+    //                 email: "",
+    //                 password: ""
+    //             });
+    //             console.log("sukces!");
+    //
+    //
+    //             sessionStorage.setItem("email", `${authUser.user.email}`);
+    //             const { history } = this.props;
+    //             history.push("/");
+    //         })
+    //         .catch((error) => {
+    //
+    //
+    //             if (error.code === 'auth/user-not-found') {
+    //                 this.setState({
+    //                     loginError: true,
+    //                     email: "",
+    //                     password: "",
+    //                 })
+    //             }
+    //         });
+    //
+    //
+    // } else {
+    //     if (password.length < 6) {
+    //         this.setState({
+    //             validPassword: true,
+    //         })
+    //     }
+    //     if (!emailValidation.test(email)) {
+    //         this.setState({
+    //             validEmail: true,
+    //         })
+    //     }
+    // }
     // };
 
 
@@ -157,26 +158,26 @@ class LoginForm extends Component {
 }
 
 
-
-
 class Login extends Component {
     render() {
         return (
             <>
-                 <section className='logNav'>
-                     <LoginRegister/>
-                     <Navigation/>
-                     <LoginForm/>
-                 </section>
+                <section className='logNav'>
+                    <LoginRegister/>
+                    <Navigation/>
+                </section>
 
 
-                 <section className='loginForm'>
-                     <h3>Zaloguj się</h3>
-                     <img src={decoration} alt='decoration'/>
-                 </section>
-             </>
-         )
-     }
- }
+                    <section className='loginForm'>
+                        <h3>Zaloguj się</h3>
+                        <img src={decoration} alt='decoration'/>
+                        <LoginForm/>
+                    </section>
+
+
+            </>
+        )
+    }
+}
 
 export default Login;
