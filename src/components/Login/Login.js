@@ -4,6 +4,11 @@ import LoginRegister from "../Home/Header/LoginRegister";
 import decoration from "../../assets/Decoration.svg";
 
 
+
+
+
+
+
 class Login extends Component {
     render() {
         return (
