@@ -1,0 +1,39 @@
+
+
+.registerFormProper {
+  width: 24.0625rem;
+  height: 22.5rem;
+  background: $firstColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-base;
+
+
+  .registerEmailName {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+
+
+    span {
+      color: $fourthColor;
+      margin-bottom: 1rem;
+    }
+
+
+    input {
+      height: 1.875rem;
+      background: transparent;
+      font-family: $font-base;
+      font-size: 1.125rem;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid $fourthColor;
+      line-height: 1.5rem;
+      opacity: 0.5;
+    }
+  }
+}
