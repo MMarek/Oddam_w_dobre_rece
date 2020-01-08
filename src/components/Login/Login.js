@@ -100,35 +100,35 @@ class LoginForm extends Component {
         };
 
 
-        const errorEmail = {
-            fontSize: "0.8rem",
-            borderTop: "1px solid red",
-            paddingTop: "0.5rem",
-            color: "red",
-            position: "absolute",
-            top: "31.7rem",
-            width: "15.1rem"
-        };
-
-
-        const errorPassword = {
-            fontSize: "0.8rem",
-            borderTop: "1px solid red",
-            paddingTop: "0.5rem",
-            color: "red",
-            position: "absolute",
-            top: "37.75rem",
-            width: "15.1rem"
-        };
-
-
-        const errorLogin = {
-            fontSize: "1rem",
-            paddingTop: "0.5rem",
-            color: "red",
-            position: "absolute",
-            top: "25.5rem",
-        };
+        // const errorEmail = {
+        //     fontSize: "0.8rem",
+        //     borderTop: "1px solid red",
+        //     paddingTop: "0.5rem",
+        //     color: "red",
+        //     position: "absolute",
+        //     top: "31.7rem",
+        //     width: "15.1rem"
+        // };
+        //
+        //
+        // const errorPassword = {
+        //     fontSize: "0.8rem",
+        //     borderTop: "1px solid red",
+        //     paddingTop: "0.5rem",
+        //     color: "red",
+        //     position: "absolute",
+        //     top: "37.75rem",
+        //     width: "15.1rem"
+        // };
+        //
+        //
+        // const errorLogin = {
+        //     fontSize: "1rem",
+        //     paddingTop: "0.5rem",
+        //     color: "red",
+        //     position: "absolute",
+        //     top: "25.5rem",
+        // };
 
 
         return (
