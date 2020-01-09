@@ -33,37 +33,6 @@ class ContactUs extends Component {
 
     render() {
 
-        const endTextStyle = {
-            fontSize: "1rem",
-            fontWeight: 700,
-            color: "green",
-            fontFamily: "Open Sans, sans-serif",
-            textAlign: "center",
-            width: "50%",
-            lineHeight: "1.5rem",
-        };
-
-        const errorStyle = {
-            fontSize: "0.8rem",
-            margin: 0,
-            borderTop: "1px solid red",
-            paddingTop: "0.5rem",
-            color: "red",
-            position: "absolute",
-            top: "15.4rem",
-            width: "15rem",
-        };
-
-        const errorMsg = {
-            fontSize: "0.8rem",
-            marginTop: "-3rem",
-            borderTop: "1px solid red",
-            paddingTop: "0.5rem",
-            color: "red",
-            position: "absolute",
-            top: "28.85rem",
-            width: "33.4rem",
-        };
 
         return (
 
@@ -80,17 +49,15 @@ class ContactUs extends Component {
                     <h2>Skontaktuj się z nami</h2>
                     <img src={decoration} alt='decoration'/>
                     <form className='contactForm' onSubmit={this.handleFormSubmit}>
-                        {this.state.formSend && <h3 style={endTextStyle}>{this.state.endMessage}</h3>}
+
                         <div className='nameEmail'>
                             <div className='name'>
                                 <span>Wpisz swoje imię</span>
                                 <input placeholder='Krzysztof' value={this.state.name} onChange={this.changeName} type='text'/>
-                                {this.state.validName && <span style={errorStyle}>Podane imię jest nieprawidłowe!</span>}
                             </div>
                             <div className='email'>
                                 <span>Wpisz swój email</span>
                                 <input placeholder='abc@xyz.pl' value={this.state.email} onChange={this.changeEmail} type='text'/>
-                                {this.state.validEmail && <span style={errorStyle}>Podany email jest nieprawidłowy!</span>}
                             </div>
                         </div>
                         <div className='message'>
@@ -101,7 +68,6 @@ class ContactUs extends Component {
 
                                        value={this.state.message}
                                        onChange={this.changeMessage} type='text'></textarea>
-                            {/*{this.state.validMessage && <span style={errorMsg}>Wiadomość musi mieć co najmniej 120 znaków!</span>}*/}
                         </div>
                         <div className='sendFormButton'>
                             <button className='hoverLink'>Wyślij</button>
