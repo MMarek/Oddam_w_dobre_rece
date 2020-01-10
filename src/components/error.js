@@ -1,65 +1,65 @@
-import React, {Component} from 'react';
-import decoration from './../../../assets/Decoration.svg'
-import clothes from './../../../assets/Background-Contact-Form.jpg'
-import instagram from './../../../assets/Instagram.svg'
-import facebook from './../../../assets/Facebook.svg'
+// import React, {Component} from 'react';
+// import decoration from './../../../assets/Decoration.svg'
+// import clothes from './../../../assets/Background-Contact-Form.jpg'
+// import instagram from './../../../assets/Instagram.svg'
+// import facebook from './../../../assets/Facebook.svg'
+//
 
-
-class ContactUs extends Component {
-
-    render() {
-        return (
-
-
-            <section className='contactUs' id='kontakt'>
-                <div className='contactUsImage'>
-                    <img src={clothes} alt='clothes' className='backgroundPhoto'/>
-                    <span className='copyright'>Copyright by Coders Lab</span>
-                    <div className='socialMedia'>
-                        <img src={facebook} alt='facebook'/>
-                        <img src={instagram} alt='instagram'/>
-                    </div>
-                </div>
-                <div className='contactUsText'>
-                    <h2>Skontaktuj się z nami</h2>
-                    <img src={decoration} alt='decoration'/>
-                    <form className='contactForm' onSubmit={this.handleFormSubmit}>
-                        {this.state.formSend && <h3 style={endTextStyle}>{this.state.endMessage}</h3>}
-                        <div className='nameEmail'>
-                            <div className='name'>
-                                <span>Wpisz swoje imię</span>
-                                <input placeholder='Krzysztof' value={this.state.name} onChange={this.changeName} type='text'/>
-                                {this.state.validName && <span style={errorStyle}>Podane imię jest nieprawidłowe!</span>}
-                            </div>
-                            <div className='email'>
-                                <span>Wpisz swój email</span>
-                                <input placeholder='abc@xyz.pl' value={this.state.email} onChange={this.changeEmail} type='text'/>
-                                {this.state.validEmail && <span style={errorStyle}>Podany email jest nieprawidłowy!</span>}
-                            </div>
-                        </div>
-                        <div className='message'>
-                            <span>Wpisz swoją wiadomość</span>
-                            <textarea placeholder='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-	                             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-	                              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-                                      value={this.state.message}
-                                      onChange={this.changeMessage} type='text'></textarea>
-                            {this.state.validMessage && <span style={errorMsg}>Wiadomość musi mieć co najmniej 120 znaków!</span>}
-                        </div>
-                        <div className='sendFormButton'>
-                            <button className='hoverLink'>Wyślij</button>
-                        </div>
-                    </form>
-
-
-                </div>
-            </section>
-        )
-    }
-}
-
-
-export default ContactUs;
+// class ContactUs extends Component {
+//
+//     render() {
+//         return (
+//
+//
+            {/*<section className='contactUs' id='kontakt'>*/}
+            {/*    <div className='contactUsImage'>*/}
+            {/*        <img src={clothes} alt='clothes' className='backgroundPhoto'/>*/}
+            {/*        <span className='copyright'>Copyright by Coders Lab</span>*/}
+            {/*        <div className='socialMedia'>*/}
+            {/*            <img src={facebook} alt='facebook'/>*/}
+            {/*            <img src={instagram} alt='instagram'/>*/}
+                    // </div>
+                // </div>
+                {/*<div className='contactUsText'>*/}
+                {/*    <h2>Skontaktuj się z nami</h2>*/}
+                {/*    <img src={decoration} alt='decoration'/>*/}
+                {/*    <form className='contactForm' onSubmit={this.handleFormSubmit}>*/}
+                        // {this.state.formSend && <h3 style={endTextStyle}>{this.state.endMessage}</h3>}
+                        {/*<div className='nameEmail'>*/}
+                        {/*    <div className='name'>*/}
+                        {/*        <span>Wpisz swoje imię</span>*/}
+                        {/*        <input placeholder='Krzysztof' value={this.state.name} onChange={this.changeName} type='text'/>*/}
+                                // {this.state.validName && <span style={errorStyle}>Podane imię jest nieprawidłowe!</span>}
+                            // </div>
+                            {/*<div className='email'>*/}
+                            {/*    <span>Wpisz swój email</span>*/}
+                            {/*    <input placeholder='abc@xyz.pl' value={this.state.email} onChange={this.changeEmail} type='text'/>*/}
+                                // {this.state.validEmail && <span style={errorStyle}>Podany email jest nieprawidłowy!</span>}
+                            // </div>
+                        // </div>
+                        {/*<div className='message'>*/}
+                        {/*    <span>Wpisz swoją wiadomość</span>*/}
+                        {/*    <textarea placeholder='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod*/}
+	                             // tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+	                             //  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                                 //      value={this.state.message}
+                                 //      onChange={this.changeMessage} type='text'></textarea>
+                            // {this.state.validMessage && <span style={errorMsg}>Wiadomość musi mieć co najmniej 120 znaków!</span>}
+                        // </div>
+                        {/*<div className='sendFormButton'>*/}
+                        {/*    <button className='hoverLink'>Wyślij</button>*/}
+                        // </div>
+                    // </form>
+                //
+                //
+                // </div>
+            // </section>
+        // )
+    // }
+// }
+//
+//
+// export default ContactUs;
 
 
 
@@ -330,65 +330,62 @@ export default ContactUs;
 // export default WhoWeHelp;
 
 
+//////////////////// login:
+
+//     this.props.firebase
+//         .doSignInWithEmailAndPassword(email, password)
+//         .then(authUser => {
+//             this.setState({
+//                 email: "",
+//                 password: ""
+//             });
+//             console.log("sukces!");
 
 
-
-handleFormSubmit = (e) => {
-
-    this.setState({
-        validPassword: false,
-        validEmail: false,
-        loginError: false,
-    });
-
-e.preventDefault();
-const {password, email} = this.state;
-
-
-const emailValidation = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-
-if (emailValidation.test(email) &&
-    password.length >= 6) {
+//             sessionStorage.setItem("email", `${authUser.user.email}`);
+//             const { history } = this.props;
+//             history.push("/");
+//         })
+//         .catch((error) => {
+//
+//
+//             if (error.code === 'auth/user-not-found') {
+//                 this.setState({
+//                     loginError: true,
+//                     email: "",
+//                     password: "",
+//                 })
+//             }
+//         });
 
 
-    this.props.firebase
-        .doSignInWithEmailAndPassword(email, password)
-        .then(authUser => {
-            this.setState({
-                email: "",
-                password: ""
-            });
-            console.log("sukces!");
+/////////////// register:
 
+// import {FirebaseContext, withFirebase} from '../firebase/context';
 
-            sessionStorage.setItem("email", `${authUser.user.email}`);
-            const { history } = this.props;
-            history.push("/");
-        })
-        .catch((error) => {
-
-
-            if (error.code === 'auth/user-not-found') {
-                this.setState({
-                    loginError: true,
-                    email: "",
-                    password: "",
-                })
-            }
-        });
-
-
-} else {
-    if (password.length < 6) {
-        this.setState({
-            validPassword: true,
-        })
-    }
-    if (!emailValidation.test(email)) {
-        this.setState({
-            validEmail: true,
-        })
-    }
-}
-};
+// this.props.firebase
+//     .doCreateUserWithEmailAndPassword(email, password)
+//     .then(authUser => {
+//         this.setState({
+//             email: "",
+//             password: "",
+//             password2: ""
+//         });
+//         console.log("sukces!");
+//
+//
+//         sessionStorage.setItem("email", `${this.state.email}`);
+//         const { history } = this.props;
+//         history.push("/");
+//     })
+//     .catch((error) => {
+//
+//
+//         if (error.code === 'auth/email-already-in-use') {
+//             this.setState({
+//                 registerError: true,
+//                 password: "",
+//                 password2: ""
+//             })
+//         }
+//     });

@@ -36,7 +36,7 @@ class ContactUs extends Component {
 
         return (
 
-            <section className='contactUs' id='kontakt'>
+            <section className='contactUs' id='contact'>
                 <div className='contactUsImage'>
                     <img src={clothes} alt='clothes' className='backgroundPhoto'/>
                     <span className='copyright'>Copyright by Coders Lab</span>

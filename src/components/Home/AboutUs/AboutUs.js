@@ -6,7 +6,7 @@ import sign from '../../../assets/Signature.svg';
 class AboutUs extends Component {
     render() {
         return (
-            <section className='aboutUs' id='oNas'>
+            <section className='aboutUs' id='aboutUs'>
                 <div className='aboutText'>
                     <h2>O nas</h2>
                     <img src={decoration} alt='decoration'/>
