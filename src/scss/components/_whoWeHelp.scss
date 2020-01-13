@@ -137,3 +137,45 @@
 .active {
   border: 1px solid $fourthColor;
 }
+
+.registerTitle {
+  width: 70%;
+  font-size: 2rem;
+  font-family: $font-base;
+  font-weight: 400;
+  letter-spacing: -0.76px;
+  color: $fifthColor;
+  text-align: center;
+  padding-bottom: 1.5625rem;
+  line-height: 3.4375rem;
+}
+
+
+.registerButton {
+  margin: 4rem 0;
+  p {
+    padding: 1rem 0.3rem;
+    border: 0.75px solid $fifthColor;
+    font-size: 2.25rem;
+    font-family: $font-base;
+    font-weight: 300;
+    text-transform: uppercase;
+    width: 17rem;
+    text-align: center;
+  }
+}
+
+
+.buttonsAfterLogin {
+  display: flex;
+  justify-content: space-between;
+
+
+  p {
+    margin: 0 1rem;
+  }
+
+  .firstButton {
+    padding: 2.1rem 0;
+  }
+}

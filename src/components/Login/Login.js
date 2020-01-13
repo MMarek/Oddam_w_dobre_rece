@@ -37,28 +37,28 @@ class LoginForm extends Component {
             loginError: false,
         });
 
-    e.preventDefault();
-    const {password, email} = this.state;
+        e.preventDefault();
+        const {password, email} = this.state;
 
 
-    const emailValidation = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        const emailValidation = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 
-    if (emailValidation.test(email) &&
-        password.length >= 6) {
+        if (emailValidation.test(email) &&
+            password.length >= 6) {
 
-    } else {
-        if (password.length < 6) {
-            this.setState({
-                validPassword: true,
-            })
+        } else {
+            if (password.length < 6) {
+                this.setState({
+                    validPassword: true,
+                })
+            }
+            if (!emailValidation.test(email)) {
+                this.setState({
+                    validEmail: true,
+                })
+            }
         }
-        if (!emailValidation.test(email)) {
-            this.setState({
-                validEmail: true,
-            })
-        }
-    }
     };
 
 
@@ -140,11 +140,11 @@ class Login extends Component {
                 </section>
 
 
-                    <section className='loginForm'>
-                        <h3>Zaloguj się</h3>
-                        <img src={decoration} alt='decoration'/>
-                        <LoginForm/>
-                    </section>
+                <section className='loginForm'>
+                    <h3>Zaloguj się</h3>
+                    <img src={decoration} alt='decoration'/>
+                    <LoginForm/>
+                </section>
 
 
             </>
