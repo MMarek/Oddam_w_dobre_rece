@@ -114,30 +114,11 @@ class ContactUs extends Component {
         width: window.innerWidth,
     };
 
-
-    // componentWillMount() {
-    //     window.addEventListener('resize', this.handleWindowSizeChange);
-    // }
-    //
-    //
-    // componentWillUnmount() {
-    //     window.removeEventListener('resize', this.handleWindowSizeChange);
-    // }
-    //
-    //
-    // handleWindowSizeChange = () => {
-    //     this.setState({ width: window.innerWidth });
-    // };
-
-
     changeName = (e) => {
-
-
         this.setState({
             name: e.target.value,
         });
     };
-
 
     changeEmail = (e) => {
         this.setState({
@@ -147,8 +128,6 @@ class ContactUs extends Component {
 
 
     changeMessage = (e) => {
-
-
         this.setState({
             message: e.target.value,
         });
@@ -156,8 +135,6 @@ class ContactUs extends Component {
 
 
     handleFormSubmit = (e) => {
-
-
         this.setState({
             formSend: false,
             validName: false,
@@ -169,15 +146,12 @@ class ContactUs extends Component {
         e.preventDefault();
         const {name, email, message} = this.state;
 
-
         const emailValidation = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         const nameValidation = /^[a-zA-Z]{2,}$/i;
-
 
         if (nameValidation.test(name) &&
             emailValidation.test(email)
             && message.length >= 120) {
-
 
             this.setState({
                 formSend: true,
@@ -186,9 +160,7 @@ class ContactUs extends Component {
                 message: "",
             });
 
-
             const apiUrl = "https://fer-api.coderslab.pl/v1/portfolio/contact";
-
 
             fetch(apiUrl,{
                 method: 'POST',
@@ -199,10 +171,8 @@ class ContactUs extends Component {
                 }),
                 headers: {
                     'Content-Type': 'application/json'
-                    // ??
                 },
             })
-                .then(resp => resp.json())
                 .then(success => {
                     console.log("Kod 200", success);
                     this.setState({
@@ -236,7 +206,6 @@ class ContactUs extends Component {
 
     render() {
 
-
         const endTextStyle = {
             fontSize: "1rem",
             fontWeight: 700,
@@ -247,7 +216,6 @@ class ContactUs extends Component {
             lineHeight: "1.5rem",
         };
 
-
         const errorStyle = {
             fontSize: "0.8rem",
             margin: 0,
@@ -255,10 +223,9 @@ class ContactUs extends Component {
             paddingTop: "0.5rem",
             color: "red",
             position: "absolute",
-            top: "15.4rem",
+            top: "20.6rem",
             width: "15rem",
         };
-
 
         const errorMsg = {
             fontSize: "0.8rem",
@@ -267,34 +234,9 @@ class ContactUs extends Component {
             paddingTop: "0.5rem",
             color: "red",
             position: "absolute",
-            top: "28.85rem",
+            top: "34.5rem",
             width: "33.4rem",
-
-
         };
-
-
-        // const { width } = this.state;
-        // const isMobile = width <= 767;
-
-
-        // if (isMobile) {
-        //     return (
-        //         <section className='contactUs' id='contact'>
-        //             <div className='contactIcons'>
-        //                 <span>Skontaktuj się z nami</span>
-        //                 {/*<img src={phone} alt={phone}/>*/}
-        //                 {/*<img src={letter} alt={letter}/>*/}
-        //             </div>
-        //             <ul className='contactList'>
-        //                 <li>Regulamin</li>
-        //                 <li>Polityka Prywatności</li>
-        //                 <li>Instrukcja jak spakować rzeczy do oddania</li>
-        //             </ul>
-        //         </section>
-        //     )
-        //
-        // } else {
 
             return (
 
