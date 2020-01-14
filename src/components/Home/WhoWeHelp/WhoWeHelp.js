@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import decoration from '../../../assets/Decoration.svg';
-// import organizations from './../../database/org.json';
+import org from './../../database/org.json';
 
 
 class WhoWeHelp extends Component {
@@ -11,6 +11,46 @@ class WhoWeHelp extends Component {
         currentPage: 1,
         active: '',
     };
+
+
+
+    changeOrganization = (e, i) => {
+
+
+        let buttonNumber;
+        const organizationsNumber = parseInt(org.organizations[i].items.length, 10);
+
+
+        if (organizationsNumber !== 3 && organizationsNumber % 3 === 0) {
+            buttonNumber = organizationsNumber / 3;
+        } else if (organizationsNumber === 3) {
+            buttonNumber = 0;
+        }
+
+
+        this.setState({
+            visibleOrganizationType: i,
+            allButtons: buttonNumber,
+            currentPage: 1,
+            active: i,
+        });
+    };
+
+
+    changeSite = (e, i) => {
+
+
+        this.setState({
+            currentPage: i,
+            active: i,
+        });
+    };
+
+
+
+
+
+
 
     showButtons = () => {
         let buttons = [];
@@ -26,17 +66,34 @@ class WhoWeHelp extends Component {
 
     buildList = () => {
 
+
+
+
+
+
+
+
         return(
             <section className='fundation'>
-                <article className='fundList' key=''>
-                    <div className='fundName'>
-                        <h3></h3>
-                        <p>Cel i misja: </p>
-                    </div>
-                    <div className='fundDonations'>
-                        <p></p>
-                    </div>
-                </article>
+
+
+
+
+
+                        <article className='fundList' key=''>
+                            <div className='fundName'>
+
+
+
+                            </div>
+                            <div className='fundDonations'>
+
+
+
+                            </div>
+                        </article>
+
+
             </section>
         );
     };
@@ -48,15 +105,34 @@ class WhoWeHelp extends Component {
         let foundationList;
         foundationList = this.buildList();
 
+
+
+
+        const allOrganizations = org.organizations;
+
+
+
+
+
         return(
             <section className='whoWeHelp' id='FunIorg'>
                 <div className='whoWeHelpDesc'>
                     <h2>Komu pomagamy?</h2>
                     <img src={decoration} alt='decoration'/>
                     <ul className='organizationType'>
-                    </ul>
-                    <p className='orgDescription'>
-                    </p>
+
+
+
+                        {allOrganizations.map((organization, index) => {
+                            return <li key={index}
+                                       onClick={(e) => this.changeOrganization(e, index)}
+                                       className={this.state.visibleOrganizationType === index ? "active" : ""}>{organization.name}</li>
+                        })}
+
+
+
+                                </ul>
+
                 </div>
                 {foundationList}
                 <div className='showButtonStyle'>
