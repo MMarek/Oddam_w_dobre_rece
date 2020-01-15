@@ -5,7 +5,7 @@ import org from './../../database/org.json';
 
 class WhoWeHelp extends Component {
     state = {
-        visableOrganizationType: 0,
+        visibleOrganizationType: 0,
         allButtons: 3,
         itemsPerPage: 3,
         currentPage: 1,
@@ -68,6 +68,16 @@ class WhoWeHelp extends Component {
 
 
 
+        // const {currentPage, itemsPerPage, visibleOrganizationType} = this.state;
+        // const itemArray = org.organizations[visibleOrganizationType].items;
+        //
+        //
+        // const indexLast = currentPage * itemsPerPage;
+        // const indexFirst = indexLast - itemsPerPage;
+        // const currentFoundations = itemArray.slice(indexFirst, indexLast);
+
+
+
 
 
 
@@ -79,26 +89,50 @@ class WhoWeHelp extends Component {
 
 
 
+                {/*{currentFoundations.map( (item, index) => {*/}
+                {/*    return (*/}
+
 
                         <article className='fundList' key=''>
                             <div className='fundName'>
 
+
+                                {/*<h3>{item.name}</h3>*/}
+                                {/*<p>Cel i misja: {item.mission} </p>*/}
 
 
                             </div>
                             <div className='fundDonations'>
 
 
+                                {/*<p>{item.donations}</p>*/}
+
 
                             </div>
                         </article>
+                    )
 
+                })}
 
             </section>
         );
     };
 
     render() {
+
+
+
+
+        const buttonStyle = {
+            textDecoration: "none",
+            paddingTop: "2.3125rem",
+            color: "#3C3C3C",
+        };
+
+
+
+
+
         let buttonList;
         buttonList = this.showButtons();
 
@@ -119,7 +153,7 @@ class WhoWeHelp extends Component {
                 <div className='whoWeHelpDesc'>
                     <h2>Komu pomagamy?</h2>
                     <img src={decoration} alt='decoration'/>
-                    <ul className='organizationType'>
+                    <ul className='orgType'>
 
 
 
@@ -132,7 +166,15 @@ class WhoWeHelp extends Component {
 
 
                                 </ul>
+                    {/*<p className='orgDescription'>*/}
 
+
+                        {/*{org.organizations[this.state.visibleOrganizationType].description}*/}
+
+
+
+
+                    {/*</p>*/}
                 </div>
                 {foundationList}
                 <div className='showButtonStyle'>

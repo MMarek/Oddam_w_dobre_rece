@@ -6,19 +6,19 @@
       "description": "W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.",
       "items": [
         {
-          "name": "Fundacja “Dbam o Zdrowie”",
-          "mission": "Pomoc osobom znajdującym się w trudnej sytuacji życiowej.",
-          "donations": "ubrania, jedzenie, sprzęt AGD, meble, zabawki"
+          "name": "Fundacja “Lorem ipsum 1“",
+          "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "donations": "Ut, enim, ad, minim, veniam, quis"
         },
         {
-          "name": "Fundacja “Dla dzieci”",
-          "mission": "Pomoc dzieciom z ubogich rodzin.",
-          "donations": "ubrania, meble, zabawki"
+          "name": "Fundacja “Lorem ipsum 2“",
+          "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "donations": "Ut, enim, ad, minim, veniam, quis"
         },
         {
-          "name": "Fundacja “Bez domu”",
-          "mission": "Pomoc dla osób nie posiadających miejsca zamieszkania.",
-          "donations": "ubrania, jedzenie, ciepłe koce"
+          "name": "Fundacja “Lorem ipsum 3“",
+          "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "donations": "Ut, enim, ad, minim, veniam, quis"
         },
         {
           "name": "Fundacja “Lorem ipsum 4“",
@@ -27,18 +27,18 @@
         },
         {
           "name": "Fundacja “Lorem Ipsum 5”",
-          "mission": "Scelerisque in dictum non consectetur a erat nam.",
-          "donations": "Mi, quis, hendrerit, dolor"
+          "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "donations": "Ut, enim, ad, minim, veniam, quis"
         },
         {
           "name": "Fundacja “Lorem Ipsum 6”",
-          "mission": "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
-          "donations": "Ut, aliquam, purus, sit, amet"
+          "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "donations": "Ut, enim, ad, minim, veniam, quis"
         },
         {
           "name": "Fundacja “Lorem Ipsum 7”",
-          "mission": "Scelerisque in dictum non consectetur a erat nam.",
-          "donations": "Egestas, sed, tempus "
+          "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "donations": "Ut, enim, ad, minim, veniam, quis"
         },
         {
           "name": "Fundacja “Lorem ipsum 8“",
@@ -47,8 +47,8 @@
         },
         {
           "name": "Fundacja “Lorem Ipsum 9”",
-          "mission": "Quis varius quam quisque id diam vel quam elementum pulvinar.",
-          "donations": "Egestas, sed, tempus "
+          "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "donations": "Ut, enim, ad, minim, veniam, quis"
         }
       ]
     },
@@ -59,33 +59,33 @@
       "items": [
         {
           "name": "Organizacja “Lorem Ipsum 1”",
-          "mission": "Quis varius quam quisque id diam vel quam elementum pulvinar.",
-          "donations": "Egestas, sed, tempus "
+          "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "donations": "Ut, enim, ad, minim, veniam, quis"
         },
         {
           "name": "Organizacja “Lorem Ipsum 2”",
-          "mission": "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
-          "donations": "Ut, aliquam, purus, sit, amet"
+          "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "donations": "Ut, enim, ad, minim, veniam, quis"
         },
         {
           "name": "Organizacja “Lorem Ipsum 3”",
-          "mission": "Scelerisque in dictum non consectetur a erat nam.",
-          "donations": "Mi, quis, hendrerit, dolor"
+          "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "donations": "Ut, enim, ad, minim, veniam, quis"
         },
         {
           "name": "Organizacja “Lorem Ipsum 4”",
-          "mission": "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
-          "donations": "Ut, aliquam, purus, sit, amet"
+          "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "donations": "Ut, enim, ad, minim, veniam, quis"
         },
         {
           "name": "Organizacja “Lorem Ipsum 5”",
-          "mission": "Scelerisque in dictum non consectetur a erat nam.",
-          "donations": "Egestas, sed, tempus "
+          "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "donations": "Ut, enim, ad, minim, veniam, quis"
         },
         {
           "name": "Organizacja “Lorem Ipsum 6“",
-          "mission": "Quis varius quam quisque id diam vel quam elementum pulvinar.",
-          "donations": "quisque, id, diam, vel, quam"
+          "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "donations": "Ut, enim, ad, minim, veniam, quis"
         }
       ]
     },
@@ -96,18 +96,18 @@
       "items": [
         {
           "name": "Zbiórka “Lorem Ipsum 1”",
-          "mission": "Hendrerit gravida rutrum quisque non tellus orci ac auctor augue.",
-          "donations": "Mi, quis, hendrerit, dolor"
+          "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "donations": "Ut, enim, ad, minim, veniam, quis"
         },
         {
           "name": "Zbiórka “Lorem Ipsum 2”",
-          "mission": "Quis varius quam quisque id diam vel quam elementum pulvinar.",
-          "donations": "Egestas, sed, tempus "
+          "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "donations": "Ut, enim, ad, minim, veniam, quis"
         },
         {
           "name": "Zbiórka “Lorem Ipsum 3”",
-          "mission": "Scelerisque in dictum non consectetur a erat nam.",
-          "donations": "Ut, aliquam, purus, sit, amet"
+          "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "donations": "Ut, enim, ad, minim, veniam, quis"
         }
       ]
     }
