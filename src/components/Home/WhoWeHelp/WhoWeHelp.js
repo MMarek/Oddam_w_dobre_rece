@@ -12,21 +12,16 @@ class WhoWeHelp extends Component {
         active: '',
     };
 
-
-
     changeOrganization = (e, i) => {
-
 
         let buttonNumber;
         const organizationsNumber = parseInt(org.organizations[i].items.length, 10);
-
 
         if (organizationsNumber !== 3 && organizationsNumber % 3 === 0) {
             buttonNumber = organizationsNumber / 3;
         } else if (organizationsNumber === 3) {
             buttonNumber = 0;
         }
-
 
         this.setState({
             visibleOrganizationType: i,
@@ -36,21 +31,13 @@ class WhoWeHelp extends Component {
         });
     };
 
-
     changeSite = (e, i) => {
-
 
         this.setState({
             currentPage: i,
             active: i,
         });
     };
-
-
-
-
-
-
 
     showButtons = () => {
         let buttons = [];
@@ -66,70 +53,38 @@ class WhoWeHelp extends Component {
 
     buildList = () => {
 
-
-
-        // const {currentPage, itemsPerPage, visibleOrganizationType} = this.state;
-        // const itemArray = org.organizations[visibleOrganizationType].items;
-        //
-        //
-        // const indexLast = currentPage * itemsPerPage;
-        // const indexFirst = indexLast - itemsPerPage;
-        // const currentFoundations = itemArray.slice(indexFirst, indexLast);
-
-
-
-
-
-
-
+        const {currentPage, itemsPerPage, visibleOrganizationType} = this.state;
+        const itemArray = org.organizations[visibleOrganizationType].items;
+        const indexLast = currentPage * itemsPerPage;
+        const indexFirst = indexLast - itemsPerPage;
+        const currentFoundations = itemArray.slice(indexFirst, indexLast);
 
         return(
             <section className='fundation'>
 
-
-
-
-                {/*{currentFoundations.map( (item, index) => {*/}
-                {/*    return (*/}
-
+                {currentFoundations.map( (item, index) => {
+                    return (
 
                         <article className='fundList' key=''>
                             <div className='fundName'>
 
-
-                                {/*<h3>{item.name}</h3>*/}
-                                {/*<p>Cel i misja: {item.mission} </p>*/}
-
+                                <h3>{item.name}</h3>
+                                <p>Cel i misja: {item.mission} </p>
 
                             </div>
                             <div className='fundDonations'>
 
-
-                                {/*<p>{item.donations}</p>*/}
-
+                                <p>{item.donations}</p>
 
                             </div>
                         </article>
                     )
-
                 })}
-
             </section>
         );
     };
 
     render() {
-
-
-
-
-        const buttonStyle = {
-            textDecoration: "none",
-            paddingTop: "2.3125rem",
-            color: "#3C3C3C",
-        };
-
-
 
 
 
@@ -139,14 +94,7 @@ class WhoWeHelp extends Component {
         let foundationList;
         foundationList = this.buildList();
 
-
-
-
         const allOrganizations = org.organizations;
-
-
-
-
 
         return(
             <section className='whoWeHelp' id='FunIorg'>
@@ -155,8 +103,6 @@ class WhoWeHelp extends Component {
                     <img src={decoration} alt='decoration'/>
                     <ul className='orgType'>
 
-
-
                         {allOrganizations.map((organization, index) => {
                             return <li key={index}
                                        onClick={(e) => this.changeOrganization(e, index)}
@@ -164,17 +110,10 @@ class WhoWeHelp extends Component {
                         })}
 
 
-
                                 </ul>
-                    {/*<p className='orgDescription'>*/}
-
-
-                        {/*{org.organizations[this.state.visibleOrganizationType].description}*/}
-
-
-
-
-                    {/*</p>*/}
+                    <p className='orgDescription'>
+                        {org.organizations[this.state.visibleOrganizationType].description}
+                    </p>
                 </div>
                 {foundationList}
                 <div className='showButtonStyle'>

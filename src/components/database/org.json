@@ -58,32 +58,32 @@
       "description": "Pomagamy również wszelkim organizacjom pozarządowym i charytatywnym, które nie są Fundacjami. Są to nasi Partnerzy, który zrobią dobry pożytek z rzeczy, które do nich trafią.",
       "items": [
         {
-          "name": "Organizacja “Lorem Ipsum 1”",
+          "name": "Organizacja “Lorem Ipsum 10”",
           "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           "donations": "Ut, enim, ad, minim, veniam, quis"
         },
         {
-          "name": "Organizacja “Lorem Ipsum 2”",
+          "name": "Organizacja “Lorem Ipsum 11”",
           "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           "donations": "Ut, enim, ad, minim, veniam, quis"
         },
         {
-          "name": "Organizacja “Lorem Ipsum 3”",
+          "name": "Organizacja “Lorem Ipsum 12”",
           "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           "donations": "Ut, enim, ad, minim, veniam, quis"
         },
         {
-          "name": "Organizacja “Lorem Ipsum 4”",
+          "name": "Organizacja “Lorem Ipsum 13”",
           "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           "donations": "Ut, enim, ad, minim, veniam, quis"
         },
         {
-          "name": "Organizacja “Lorem Ipsum 5”",
+          "name": "Organizacja “Lorem Ipsum 14”",
           "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           "donations": "Ut, enim, ad, minim, veniam, quis"
         },
         {
-          "name": "Organizacja “Lorem Ipsum 6“",
+          "name": "Organizacja “Lorem Ipsum 15“",
           "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           "donations": "Ut, enim, ad, minim, veniam, quis"
         }
@@ -95,20 +95,36 @@
       "description": "Wspieramy lokalne zbiórki organizowane przez indywidualne osoby, którym zależy na dobru społeczności, w której żyją. Sam też możesz zorganizować taką zbiórkę i pomóc tym, którzy są najbliżej.",
       "items": [
         {
-          "name": "Zbiórka “Lorem Ipsum 1”",
+          "name": "Zbiórka “Lorem Ipsum 16”",
           "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           "donations": "Ut, enim, ad, minim, veniam, quis"
         },
         {
-          "name": "Zbiórka “Lorem Ipsum 2”",
+          "name": "Zbiórka “Lorem Ipsum 17”",
           "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           "donations": "Ut, enim, ad, minim, veniam, quis"
         },
         {
-          "name": "Zbiórka “Lorem Ipsum 3”",
+          "name": "Zbiórka “Lorem Ipsum 18”",
+          "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "donations": "Ut, enim, ad, minim, veniam, quis"
+        },
+        {
+          "name": "Zbiórka “Lorem Ipsum 19”",
+          "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "donations": "Ut, enim, ad, minim, veniam, quis"
+        },
+        {
+          "name": "Zbiórka “Lorem Ipsum 20”",
+          "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+          "donations": "Ut, enim, ad, minim, veniam, quis"
+        },
+        {
+          "name": "Zbiórka “Lorem Ipsum 21”",
           "mission": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
           "donations": "Ut, enim, ad, minim, veniam, quis"
         }
+
       ]
     }
   ]
