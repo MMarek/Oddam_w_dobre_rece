@@ -65,7 +65,7 @@ class WhoWeHelp extends Component {
                 {currentFoundations.map( (item, index) => {
                     return (
 
-                        <article className='fundList' key=''>
+                        <article className='fundList' key={index}>
                             <div className='fundName'>
 
                                 <h3>{item.name}</h3>
