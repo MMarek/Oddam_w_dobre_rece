@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ContactUs from "../Home/ContactUs/ContactUs";
+import ThingsBackHead from "./ThingsBackHead";
 
 
 class ThingsBack extends Component {
@@ -10,6 +11,7 @@ class ThingsBack extends Component {
 
         return (
             <>
+                <ThingsBackHead/>
                 <ContactUs/>
             </>
         )
