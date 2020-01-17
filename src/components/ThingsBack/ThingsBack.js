@@ -3,6 +3,7 @@ import ContactUs from "../Home/ContactUs/ContactUs";
 import ThingsBackHead from "./ThingsBackHead";
 import Step1 from "./Step1";
 import Step2 from "./Step2";
+import Step3 from "./Step3";
 
 class ThingsBack extends Component {
 
@@ -12,10 +13,11 @@ class ThingsBack extends Component {
 
         return (
             <>
-                <Step1/>
-                <Step2/>
                 {/*<ThingsBackForm/>*/}
                 <ThingsBackHead/>
+                <Step1/>
+                <Step2/>
+                <Step3/>
                 <ContactUs/>
             </>
         )
