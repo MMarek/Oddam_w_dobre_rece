@@ -1,27 +1,135 @@
+// import React, {Component} from 'react';
+// // import LoginRegister from "../Home/Header/LoginRegister";
+// // import Navigation from "../Home/Header/Navigation";
+// import decoration from '../../assets/Decoration.svg';
+//
+//
+// class ThingsBackHead extends Component {
+//
+//     render() {
+//
+//             return (
+//                 <section className='thingsBack'>
+//                     <div className='thingsBackHead'>
+//                         {/*<LoginRegister/>*/}
+//                         {/*<Navigation/>*/}
+//                     </div>
+//                     <div className='thingsBackFirst'>
+//                         <div className='thingsBackText'>
+//                             <h2>Oddaj rzeczy, których już nie chcesz POTRZEBUJĄCYM</h2>
+//                             <img src={decoration} alt={decoration}/>
+//                             <h3>Wystarczą 4 proste kroki:</h3>
+//
+//
+//                             <ul className='thingsBackSteps'>
+//                                 <li>
+//                                     <div className='square'></div>
+//                                     <span>1</span>
+//                                     <p>Wybierz<br/>rzeczy</p>
+//                                 </li>
+//                                 <li>
+//                                     <div className='square'></div>
+//                                     <span>2</span>
+//                                     <p>Spakuj je<br/>w worki</p>
+//                                 </li>
+//                                 <li>
+//                                     <div className='square'></div>
+//                                     <span>3</span>
+//                                     <p>Wybierz<br/>fundację</p>
+//                                 </li>
+//                                 <li>
+//                                     <div className='square'></div>
+//                                     <span>4</span>
+//                                     <p>Zamów<br/>kuriera</p>
+//                                 </li>
+//                             </ul>
+//                         </div>
+//                     </div>
+//                 </section>
+//             )
+//         }
+// }
+//
+//
+// export default ThingsBackHead;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import React, {Component} from 'react';
-// import LoginRegister from "../Home/Header/LoginRegister";
-// import Navigation from "../Home/Header/Navigation";
-import decoration from '../../assets/Decoration.svg';
+import LoginRegister from "../Home/Header/LoginRegister";
+import Navigation from "../Home/Header/Navigation";
+import decoration from "./../../assets/Decoration.svg"
 
 
-class ThingsBackHead extends Component {
+class GiveThingsAwayHeader extends Component {
+    state = {
+        width: window.innerWidth,
+    };
+
+
+    componentWillMount() {
+        window.addEventListener('resize', this.handleWindowSizeChange);
+    }
+
+
+    componentWillUnmount() {
+        window.removeEventListener('resize', this.handleWindowSizeChange);
+    }
+
+
+    handleWindowSizeChange = () => {
+        this.setState({ width: window.innerWidth });
+    };
+
 
     render() {
 
+
+        const { width } = this.state;
+        const isMobile = width <= 767;
+
+
+        if (isMobile) {
             return (
-                <section className='thingsBack'>
-                    <div className='thingsBackHead'>
-                        {/*<LoginRegister/>*/}
-                        {/*<Navigation/>*/}
+                <section className='giveThingsAway'>
+                    <Navigation/>
+                    <div className='giveThingsAwayWelcome'>
+                        <div className='giveThingsAwayText'>
+                            <h2>Oddaj rzeczy, których już nie chcesz POTRZEBUJĄCYM</h2>
+                            <h3>Wystarczą 4 proste kroki:</h3>
+                        </div>
                     </div>
-                    <div className='thingsBackFirst'>
-                        <div className='thingsBackText'>
+                </section>
+            )
+        } else {
+            return (
+                <section className='giveThingsAway'>
+                    <div className='giveThingsAwayHeader'>
+                        <LoginRegister/>
+                        <Navigation/>
+                    </div>
+                    <div className='giveThingsAwayWelcome'>
+                        <div className='giveThingsAwayText'>
                             <h2>Oddaj rzeczy, których już nie chcesz POTRZEBUJĄCYM</h2>
                             <img src={decoration} alt={decoration}/>
                             <h3>Wystarczą 4 proste kroki:</h3>
 
 
-                            <ul className='thingsBackSteps'>
+                            <ul className='giveThingsAwaySteps'>
                                 <li>
                                     <div className='square'></div>
                                     <span>1</span>
@@ -43,12 +151,15 @@ class ThingsBackHead extends Component {
                                     <p>Zamów<br/>kuriera</p>
                                 </li>
                             </ul>
+
+
                         </div>
                     </div>
                 </section>
             )
         }
+    }
 }
 
 
-export default ThingsBackHead;
+export default GiveThingsAwayHeader;
