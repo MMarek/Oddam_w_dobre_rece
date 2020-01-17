@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import LoginRegister from "../Home/Header/LoginRegister";
-import Navigation from "../Home/Header/Navigation";
+// import LoginRegister from "../Home/Header/LoginRegister";
+// import Navigation from "../Home/Header/Navigation";
 import decoration from '../../assets/Decoration.svg';
+
 
 class ThingsBackHead extends Component {
 
@@ -10,8 +11,8 @@ class ThingsBackHead extends Component {
             return (
                 <section className='thingsBack'>
                     <div className='thingsBackHead'>
-                        <LoginRegister/>
-                        <Navigation/>
+                        {/*<LoginRegister/>*/}
+                        {/*<Navigation/>*/}
                     </div>
                     <div className='thingsBackFirst'>
                         <div className='thingsBackText'>

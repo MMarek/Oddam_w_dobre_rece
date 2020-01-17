@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+// import lastStep from "../../assets/Background-Form.jpg";
+// import info from "";
 
 
 
@@ -8,6 +10,27 @@ class Step1 extends Component {
 
         return (
             <>
+
+
+
+
+                {/*<div className='progressBar'>*/}
+                {/*    <span className='bar activeBar'>1</span>*/}
+                {/*    <span className='bar'>2</span>*/}
+                {/*    <span className='bar'>3</span>*/}
+                {/*    <span className='bar'>4</span>*/}
+                {/*    <span className='bar'><img src={lastStep} alt={lastStep}/></span>*/}
+                {/*</div>*/}
+                {/**/}
+                {/*<div className='titleStep'>*/}
+                {/*    <span className='mobilechoose'>Zaznacz co chcesz oddać:</span>*/}
+                {/*</div>*/}
+
+
+
+
+
+
                 <div className='important'>
                     <h2>Ważne!</h2>
                     <p>Uzupełnij szczegóły dotyczące Twoich rzeczy. Dzięki temu będziemy wiedzieć komu najlepiej je
