@@ -656,3 +656,110 @@
     justify-content: center;
   }
 }
+
+.steps {
+  font-family: $font-base;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 40rem;
+  background-image: url("./../../assets/Background-Form.jpg");
+
+  .radioForm {
+    margin: 0 3.125rem 3.5rem 5.875rem;
+    }
+
+    .radioOptions {
+      margin: 2rem 0;
+
+
+      input {
+        width: 2.5rem;
+        height: 2.5rem;
+        position: relative;
+        vertical-align: middle;
+
+
+        &::after {
+          content: "";
+          width: 2.5rem;
+          height: 2.5rem;
+          border: 1px solid $fourthColor;
+          cursor: pointer;
+          position: absolute;
+          background: #EDECEA;
+        }
+        &:checked::after {
+          content: "";
+          background: $thirdColor;
+          width: 2.5rem;
+          height: 2.5rem;
+        }
+      }
+      label {
+        margin-left: 2rem;
+        font-size: 1.2rem;
+        font-weight: 300;
+      }
+    }
+  }
+
+
+.nextPrevButtons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+
+
+  .nextButton {
+    border: 0.75px solid $fourthColor;
+    padding: 1rem 3rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+    cursor: pointer;
+    margin-right: 8.875rem;
+  }
+}
+
+.errorStyle {
+  font-size: 0.8rem;
+  color: red;
+  position: absolute;
+}
+
+.progressBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  background: url("./../../assets/Background-Form.jpg");
+
+  .bar {
+    font-family: $font-base;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: $secoundColor;
+    margin: 0 1rem;
+    box-shadow: 2px 2px 5px $thirdColor;
+  }
+}
+
+
+.titleStep {
+  display: flex;
+  justify-content: center;
+  background: url("./../../assets/Background-Form.jpg");
+  padding: 2rem 0;
+
+
+  .mobilechoose {
+    font-family: $font-base;
+    font-size: 1.4rem;
+    margin: 0 2rem;
+
+  }
+}
