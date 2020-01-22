@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-// import ContactUs from "../Home/ContactUs/ContactUs";
+import ContactUs from "../Home/ContactUs/ContactUs";
 import ThingsBackHead from "./ThingsBackHead";
 import Step1 from "./Step1";
 import Step2 from "./Step2";
@@ -20,7 +20,7 @@ class ThingsBack extends Component {
                 <Step2/>
                 <Step3/>
                 <Step4/>
-                {/*<ContactUs/>*/}
+                <ContactUs/>
             </>
         )
     }
